@@ -131,8 +131,6 @@ p {
 
 /* Site nav */
 
-/* 
-conteiner  */
 .site-nav {
   display: inline-flex;
 }
@@ -216,8 +214,12 @@ conteiner  */
   text-align: center;
   padding-top: 200px;
   padding-bottom: 210px;
-  background-image: url(../images/hero/bg.jpg),
-    linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
 }
@@ -425,13 +427,13 @@ conteiner  */
   height: 60px;
 }
 
-.our-clients-item:hover .our-clients-link,
-.our-clients-item:focus .our-clients-link {
+.our-clients-link:hover .our-clients-svg,
+.our-clients-link:focus .our-clients-svg {
   fill: var(--accent-color);
 }
 
-.our-clients-item:hover .our-clients-link,
-.our-clients-item:focus .our-clients-link {
+.our-clients-link:hover,
+.our-clients-link:focus {
   border-color: var(--accent-color);
 }
 
